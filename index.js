@@ -11,10 +11,5 @@ module.exports = {
       return;
     }
 
-    var emberTetherAddon = this.addons.filter(function(addon) {
-      return addon.name === 'ember-tether';
-    })[0];
-
-    emberTetherAddon.importBowerDependencies(app);
   }
 };
