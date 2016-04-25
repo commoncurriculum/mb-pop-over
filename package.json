@@ -36,12 +36,16 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-resolver": "^2.0.3",
+    "ember-tether": "^0.3.0",
     "ember-try": "~0.0.8"
   },
   "keywords": [
     "ember-addon",
     "pop-over"
   ],
+  "peerDependencies": {
+    "ember-tether": "^0.3.0"
+  },
   "dependencies": {
     "ember-cli-babel": "^5.1.5",
     "ember-getowner-polyfill": "^1.0.1",
