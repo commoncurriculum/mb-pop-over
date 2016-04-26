@@ -20,6 +20,8 @@ export default Ember.Component.extend({
   anchorClassNames: null,
   'body-class':     null,
   'anchor-class':   null,
+  visibleClassNames: "pop-over__body--visible",
+  hiddenClassNames: "pop-over__body--hidden",
 
   _scopeParent: null,
 
