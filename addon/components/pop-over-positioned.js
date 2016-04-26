@@ -61,9 +61,9 @@ export default TetheredComponent.extend({
   visibleClass: Ember.computed("isOpen", {
     get() {
       if (this.get("isOpen")) {
-        return "pop-over__body--visible";
+        return this.get('visibleClassName')
       } else {
-        return "pop-over__body--hidden";
+        return this.get('hiddenClassName')
       }
     }
   }),
