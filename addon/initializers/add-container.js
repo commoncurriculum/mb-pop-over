@@ -1,5 +1,5 @@
 export default function() {
-  if (typeof FastBoot) {
+  if (typeof FastBoot !== 'undefined') {
     return;
   }
 
