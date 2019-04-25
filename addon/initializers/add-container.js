@@ -5,7 +5,10 @@ export default function() {
 
   const application = arguments[1] || arguments[0];
 
-  const rootEl               = document.querySelector(application.rootElement);
+  const rootEl               = application.rootElement instanceof HTMLElement 
+    ? application.rootElement 
+    : document.querySelector(application.rootElement);
+  
   const popOverContainerEl   = document.createElement('div');
   const emberPopOver         = application.emberPopOver || {};
   const popOverContainerElId = emberPopOver.popOverRootElementId || 'pop-overs';
